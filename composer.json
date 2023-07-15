@@ -1,6 +1,7 @@
 {
     "name": "hexlet/code",
     "description": "Brain Games",
+    "bin": ["bin/brain-games"],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
@@ -12,5 +13,6 @@
             "email": "sabina.sultanalieva@etu.univ-lyon1.fr"
         }
     ],
+    "license": "MIT",
     "require": {}
 }
