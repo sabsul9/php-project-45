@@ -3,15 +3,17 @@
     "description": "Brain Games",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src"
         },
         "files": [
-            "src/Cli.php",
-            "src/Even.php"
+            "src/Games/Cli.php",
+            "src/Games/Even.php",
+            "src/Games/Calc.php"
         ]
     },
     "authors": [

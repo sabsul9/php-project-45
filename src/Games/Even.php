@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Cli\getName;
 
-function questions()
+function isEven()
 {
     $name = getName();
     line("Answer 'yes' if the number is even, otherwise answer 'no'");
@@ -14,8 +14,9 @@ function questions()
         $randomNumber = random_int(1, 100);
         $isEven = ($randomNumber % 2 === 0);
         $correctAnswer = $isEven ? 'yes' : 'no';
-        line("Question, %d", $randomNumber);
+        line("Question: %d", $randomNumber);
         $userAnswer = trim(prompt("your answer: "));
+
         if ($userAnswer !== $correctAnswer ) {
             line("{$userAnswer} is wrong answer ;(. Correct answer was {$correctAnswer}.");
             line("Let's try again, {$name}!");
